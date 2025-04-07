@@ -38,7 +38,7 @@ The repository includes a `Jenkinsfile` that defines a basic CI/CD pipeline.
 
 - The pipeline is written in Groovy.
 - It can be executed by a Jenkins pipeline job connected to this repository.
-- It does not deploy to a real environment, but simulates the process.
+- It does not work in a real environment, it is only a simulation.
 
 ## Requirements
 
@@ -54,4 +54,4 @@ To run the scripts locally, you need:
 ```bash
 ./task1_massive_meteorite.sh
 ./task2_meteorites_prague.sh
-./deploy.sh  # Optional simulation of deployment
+./artifact_deployment.sh  # Optional simulation of deployment
