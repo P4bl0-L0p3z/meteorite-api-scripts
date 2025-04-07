@@ -16,22 +16,6 @@ This repository contains two Bash scripts that retrieve and process data from NA
 - Outputs the number of results found.
 - Sorts and lists meteorite names by year of impact.
 
-## Requirements
-
-To run the scripts, you need the following installed:
-
-- `bash`
-- `curl`
-- `jq`
-
-## How to Run
-
-Open a terminal and run:
-
-```bash
-bash task1_massive_meteorite.sh
-bash task2_meteorites_prague.sh
-
 ## Jenkins CI/CD Pipeline
 
 The repository includes a `Jenkinsfile` that defines a basic CI/CD pipeline.
@@ -52,9 +36,9 @@ The repository includes a `Jenkinsfile` that defines a basic CI/CD pipeline.
 
 ### Notes:
 
-- The pipeline is written in Declarative Jenkins syntax (Groovy).
+- The pipeline is written in Groovy.
 - It can be executed by a Jenkins pipeline job connected to this repository.
-- It does not deploy to a real environment, but simulates the process for educational purposes.
+- It does not deploy to a real environment, but simulates the process.
 
 ## Requirements
 
@@ -68,6 +52,6 @@ To run the scripts locally, you need:
 ## How to Run Locally
 
 ```bash
-bash task1_massive_meteorite.sh
-bash task2_meteorites_prague.sh
-bash deploy.sh  # Optional simulation of deployment
+./task1_massive_meteorite.sh
+./task2_meteorites_prague.sh
+./deploy.sh  # Optional simulation of deployment
